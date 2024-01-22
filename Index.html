@@ -35,21 +35,21 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link wszystko active" href="#">Wszystko</a>
+                                        <a class="nav-link active" id="myBtnAll" href="javascript: wszystkoInput()">Wszystko</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link doDomu" href="#">Do domu</a>
+                                        <a class="nav-link" id="doDomu" href="javascript: DoDomuInput()">Do domu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link doWody" href="#">Do wody</a>
+                                        <a class="nav-link" id="doWody" href="javascript: DoWodyInput()">Do wody</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link naDworze" href="#">Na dworze</a>
+                                        <a class="nav-link" id="naDworze" href="javascript: NaDworzeInput()">Na dworze</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="d-flex">
-                                <button class="btn btn-outline-success" type="submit"><i class="fa fa-shopping-cart"
+                                <button class="btn btn-outline-success" type="submit" onclick="Cart()"><i class="fa fa-shopping-cart"
                                         aria-hidden="true"></i>
                                     <div id="cart">(0)</div>
                                 </button>
@@ -67,20 +67,20 @@
                             <div class="row justify-content-center">
                                 <div class="col-auto"><button id="addProduct1">+</button></div>
                                 <div class="col-auto">98.00 Pln</div>
-                                <div class="col-auto"><button id="deduct">-</button></div>
+                                <div class="col-auto"><button id="deduct1">-</button></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="container my-4 col-md-5 mx-auto">
                         <div class="">
-                            <img src="./Images/FootballBall.jpg" class="img-fluid">
+                            <img src="./Images/BasketBall.jpg" class="img-fluid">
                         </div>
                         <div class="text-center">
-                            <div class="fw-bold my-2">Piłka nożna</div>
+                            <div class="fw-bold my-2">Piłka do koszykówki</div>
                             <div class="row justify-content-center">
                                 <div class="col-auto"><button id="addProduct1">+</button></div>
-                                <div class="col-auto">98.00 Pln</div>
+                                <div class="col-auto">89.00 Pln</div>
                                 <div class="col-auto mb-2"><button id="deduct">-</button></div>
                             </div>
                         </div>
