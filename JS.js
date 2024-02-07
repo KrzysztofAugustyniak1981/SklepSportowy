@@ -16,19 +16,17 @@ let product = [
 let length = product.length;
 let cartPrice = 0;
 let cartPriceRe = 0;
-/* inputs */
-let productList = document.getElementById("Products");
-let cartPlace = document.getElementById("cart");
-let cartOverlay = document.getElementById("cartView");
-
-
-/* get element */
+/* Elements */
+const productList = document.getElementById("Products");
+const cartPlace = document.getElementById("cart");
+const cartOverlay = document.getElementById("cartView");
+const buttonGroup = document.getElementById("Products");
 
 
 /* Function */
 function wszystkoInput() {
-    let i = length -1;
     clear();
+    let i = length -1;
     OfferAll();
 
     function OfferAll() {
@@ -72,7 +70,6 @@ function DoDomuInput() {
         i + 
         '">-</button></div></div></div></div>';
         i--;
-        console.log("lol1");
         OfferInside();
     } else if (i>-1) {
         i--;
@@ -141,7 +138,6 @@ function NaDworzeInput() {
     document.getElementById("naDworze").classList.add('active');
 }
 
-const buttonGroup = document.getElementById("Products");
 let buttonGroupPressed = e => {
     let isButton = e.target.nodeName === 'BUTTON';
     if(!isButton) {
@@ -161,9 +157,6 @@ let buttonGroupPressed = e => {
         console.log(product[buyingProduct][4]);
     } cartRefresh()
 }
-buttonGroup.addEventListener("click", buttonGroupPressed);
-cartOverlay.addEventListener("click", buttonGroupPressed);
-cartOverlay.addEventListener("click", openModal);
 
 
 
@@ -217,3 +210,7 @@ function closeModal() {
 }
 
 
+
+buttonGroup.addEventListener("click", buttonGroupPressed);
+cartOverlay.addEventListener("click", buttonGroupPressed);
+cartOverlay.addEventListener("click", openModal);

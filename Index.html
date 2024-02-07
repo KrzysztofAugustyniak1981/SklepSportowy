@@ -13,8 +13,8 @@
 
 </head>
 
-<body onload="wszystkoInput()">
-    <div class="container">
+<body onload="wszystkoInput()" class="">
+    <div class="container page">
         <div class="row">
             <div class="col-10 m-3">
                 <div class="row my-2"> <!-- podział na 2 ?? -->
@@ -35,7 +35,8 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="myBtnAll" href="javascript: wszystkoInput()">Wszystko</a>
+                                        <a class="nav-link active" id="myBtnAll"
+                                            href="javascript: wszystkoInput()">Wszystko</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="doDomu" href="javascript: DoDomuInput()">Do domu</a>
@@ -44,13 +45,14 @@
                                         <a class="nav-link" id="doWody" href="javascript: DoWodyInput()">Do wody</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" id="naDworze" href="javascript: NaDworzeInput()">Na dworze</a>
+                                        <a class="nav-link" id="naDworze" href="javascript: NaDworzeInput()">Na
+                                            dworze</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="d-flex">
-                                <button class="btn btn-outline-success" onclick="openModal()"><i class="fa fa-shopping-cart"
-                                        aria-hidden="true"></i>
+                                <button class="btn btn-outline-success" onclick="openModal()"><i
+                                        class="fa fa-shopping-cart" aria-hidden="true"></i>
                                     <div id="cart">(0)</div>
                                 </button>
                             </div>
@@ -58,7 +60,7 @@
                     </nav>
                 </div>
                 <div id="Products" class="row text-center">
-                    
+
 
                 </div>
             </div>
@@ -74,15 +76,22 @@
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <div id="cartView" class="m-3">
             </div>
+        </div>
     </div>
-    <footer>
-
-    </footer>
-    <script src="./JS.js"></script>
-    <script src="https://kit.fontawesome.com/9395b521ba.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+        <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <p><br>© 2024 Krzysztof Augustyniak. Wszelkie prawa zastrzeżone.<br></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./JS.js"></script>
+        <script src="https://kit.fontawesome.com/9395b521ba.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
